@@ -13,6 +13,10 @@
 		710E847626C54949006C154A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710E847426C54949006C154A /* Main.storyboard */; };
 		710E847826C5494A006C154A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710E847726C5494A006C154A /* Assets.xcassets */; };
 		710E847B26C5494A006C154A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710E847926C5494A006C154A /* LaunchScreen.storyboard */; };
+		710E848326C54A26006C154A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E848226C54A26006C154A /* FirstViewController.swift */; };
+		710E848526C54A47006C154A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E848426C54A47006C154A /* SecondViewController.swift */; };
+		710E848726C54A82006C154A /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E848626C54A82006C154A /* ThirdViewController.swift */; };
+		710E848926C54AD0006C154A /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710E848826C54AD0006C154A /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		710E847726C5494A006C154A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		710E847A26C5494A006C154A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		710E847C26C5494A006C154A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		710E848226C54A26006C154A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		710E848426C54A47006C154A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		710E848626C54A82006C154A /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		710E848826C54AD0006C154A /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +67,24 @@
 				710E846E26C54949006C154A /* AppDelegate.swift */,
 				710E847026C54949006C154A /* SceneDelegate.swift */,
 				710E847226C54949006C154A /* ViewController.swift */,
+				710E848A26C54AE6006C154A /* Controllers */,
 				710E847426C54949006C154A /* Main.storyboard */,
 				710E847726C5494A006C154A /* Assets.xcassets */,
 				710E847926C5494A006C154A /* LaunchScreen.storyboard */,
 				710E847C26C5494A006C154A /* Info.plist */,
 			);
 			path = "Lesson_8_Home-Work";
+			sourceTree = "<group>";
+		};
+		710E848A26C54AE6006C154A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				710E848226C54A26006C154A /* FirstViewController.swift */,
+				710E848426C54A47006C154A /* SecondViewController.swift */,
+				710E848626C54A82006C154A /* ThirdViewController.swift */,
+				710E848826C54AD0006C154A /* FourthViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +160,10 @@
 				710E847326C54949006C154A /* ViewController.swift in Sources */,
 				710E846F26C54949006C154A /* AppDelegate.swift in Sources */,
 				710E847126C54949006C154A /* SceneDelegate.swift in Sources */,
+				710E848926C54AD0006C154A /* FourthViewController.swift in Sources */,
+				710E848526C54A47006C154A /* SecondViewController.swift in Sources */,
+				710E848726C54A82006C154A /* ThirdViewController.swift in Sources */,
+				710E848326C54A26006C154A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
