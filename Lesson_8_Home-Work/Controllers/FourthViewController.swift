@@ -17,7 +17,7 @@ class FourthViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(animated)
         labelFourthViewController.text = textInfo
-        print(textInfo)
+        
     }
     
 }

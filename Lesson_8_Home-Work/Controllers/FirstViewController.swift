@@ -18,11 +18,12 @@ class FirstViewController: UIViewController {
     
     @IBAction func buttonPresed1() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        guard let secondViewController = storyboard.instantiateViewController (identifier: "SecondViewController") as? SecondViewController else {return}
-        textInfo = textField.text!
-        secondViewController.textInfo = textInfo
-        show(secondViewController, sender: nil)
-        print(textInfo)
+        if let secondViewController = storyboard.instantiateViewController(identifier: "SecondViewController") as? SecondViewController {
+            secondViewController.textInfo = textField.text!
+            show(secondViewController, sender: nil)
+            
+        }
+        
     }
     
 }
