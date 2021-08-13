@@ -10,6 +10,14 @@ import UIKit
 
 class FourthViewController: UIViewController {
     
-    let textInfo: String = ""
+    var textInfo: String = ""
+    
+    @IBOutlet weak var labelFourthViewController: UILabel!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super .viewDidAppear(animated)
+        labelFourthViewController.text = textInfo
+        print(textInfo)
+    }
     
 }

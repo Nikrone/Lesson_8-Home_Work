@@ -8,21 +8,22 @@
 import Foundation
 import UIKit
 
+
 class FirstViewController: UIViewController {
+    
     
     @IBOutlet weak var textField: UITextField!
     var textInfo: String = ""
     
-    @IBAction func buttonPresed1() {
-        let secondViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: "SecondViewController") as! SecondViewController
-        show(secondViewController, sender: nil)
-        textField.text = textInfo
-    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        textField.text = textInfo
-        
+    @IBAction func buttonPresed1() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        guard let secondViewController = storyboard.instantiateViewController (identifier: "SecondViewController") as? SecondViewController else {return}
+        textInfo = textField.text!
+        secondViewController.textInfo = textInfo
+        show(secondViewController, sender: nil)
+        print(textInfo)
     }
     
 }
+

@@ -10,15 +10,16 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    let textInfo: String = ""
+    var textInfo: String = ""
     
-    @IBAction func buttonPressed2 () {
-        let thirdViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: "TextField") as! ThirdViewController
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "buttonSecondViewController" else {return}
+        guard let thirdViewController = segue.destination as? ThirdViewController else {return}
+        thirdViewController.textInfo = textInfo
         
+        print(textInfo)
     }
     
 }
+
+

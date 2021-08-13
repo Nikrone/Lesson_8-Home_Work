@@ -10,11 +10,14 @@ import UIKit
 
 class ThirdViewController: UIViewController {
     
-    let textInfo: String = ""
+    var textInfo: String = ""
     
     @IBAction func buttonPressed3() {
-        let fourthViewController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(identifier: "FourthViewController") as! FourthViewController
+        let fourthViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "FourthViewController") as! FourthViewController
+        fourthViewController.textInfo = textInfo
+        
         present(fourthViewController, animated: true, completion: nil)
+        print(textInfo)
     }
     
 }
