@@ -10,9 +10,9 @@ import UIKit
 
 class FourthViewController: UIViewController {
     
-    var textInfo: String = ""
-    
     @IBOutlet weak var labelFourthViewController: UILabel!
+    
+    var textInfo: String = ""
     
     override func viewDidAppear(_ animated: Bool) {
         super .viewDidAppear(animated)
